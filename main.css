@@ -287,6 +287,13 @@ swiper-slide img {
 	font-size: 10px;
 }
 
+#destaque-bk{
+	display: flex;
+	justify-content: center;
+
+}
+
+
 .destaque{
 	display: flex;
 	justify-content: center;
