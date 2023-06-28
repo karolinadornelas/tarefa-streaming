@@ -577,14 +577,15 @@ ul{
 	margin:350px;
 }
 
+#liveshare{
+	margin: 25px;
+}
+
 .liveshare-component{
 	width: 100%;
 	position: relative;
 	padding: 10px;
 	background-color: #000;
-}
-.liveshare{
-	margin: 25px;
 }
 	
 .liveShare-rooms{
