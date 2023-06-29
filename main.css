@@ -154,7 +154,6 @@ swiper-slide {
 swiper-slide img {
 	display: block;
 	width: 100%;
-	height: 100%;
 	object-fit: cover;
 }
 
@@ -170,8 +169,6 @@ swiper-slide img {
 	justify-content: center;
 	opacity: 0;
 }
-
-
 
 .menu__desc_swi{
 	display: flex;
@@ -241,6 +238,7 @@ swiper-slide img {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	object-fit: cover
 }
 
 .img__title{
@@ -252,11 +250,11 @@ swiper-slide img {
 
 .img__txt,
 .desc_img__text{
-	width: 100%px;
-	font-size: 10px;
-	margin-top: .25em;
-	text-align: justify;
+	width: 100%;
+	font-size: 9px;
 	padding: 3px;
+	text-align: justify;
+	
 	
 }
 
