@@ -697,6 +697,9 @@ footer i:hover{
 		width: 100%;
 	}
 
+	swiper-slide {
+		color: transparent;
+	}
 }
 
 
