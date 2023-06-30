@@ -51,12 +51,19 @@ nav.navbar-transparente {
 }
 
 .entrar-divider{
-	background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgb(10, 58, 121) 16%, rgba(6,5,85,1) 29%, rgba(8,7,106,1) 40%, rgba(9,9,121,1) 47%, rgba(34,7,148,1) 55%, rgba(51,6,166,1) 67%, rgba(39,40,173,1) 79%, rgba(36,50,175,1) 83%, rgba(33,58,177,1) 86%, rgba(21,94,185,1) 100%);
 	width: 100%;
-	height: .25rem;
-
+	height: .15em;  
+	background: linear-gradient(270deg, #7371c0, #371b98, #2d21a0, #244b95, #2862bc, #615fdd);
+    background-size: 1400% 1400%;
+    animation: AnimationName 7s ease infinite;
 }
+
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
 
 #premium-resgate{
 	display: flex;
@@ -129,11 +136,17 @@ h1{
 }
 
 .feed-divider{
-	background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 16%, rgba(6,5,85,1) 29%, rgba(8,7,106,1) 40%, rgba(9,9,121,1) 47%, rgba(34,7,148,1) 55%, rgba(51,6,166,1) 67%, rgba(39,40,173,1) 79%, rgba(36,50,175,1) 83%, rgba(33,58,177,1) 86%, rgba(21,94,185,1) 100%);
 	width: 100%;
-	height: .25rem;
-	
+	height: .15em;  
+	background: linear-gradient(270deg, #7371c0, #371b98, #2d21a0, #244b95, #2862bc, #615fdd);
+    background-size: 1400% 1400%;
+    animation: AnimationName 7s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
 }
 
 swiper-container {
@@ -512,12 +525,26 @@ h5 a{
 }
 
 .card{
+	margin-top: 25px;
+	margin-right: 25px;
+	background: linear-gradient(270deg, #040353, #371b98, #2d21a0, #244b95, #2862bc, #615fdd);
+    background-size: 1400% 1400%;
+    animation: AnimationName 7s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+/*.card{
 	color: white;
 	background: rgb(2,0,36);
 	background: linear-gradient(90deg, rgba(2,0,36,1) 16%, rgba(6,5,85,1) 29%, rgba(8,7,106,1) 40%, rgba(9,9,121,1) 47%, rgba(34,7,148,1) 55%, rgba(51,6,166,1) 67%, rgba(39,40,173,1) 79%, rgba(36,50,175,1) 83%, rgba(33,58,177,1) 86%, rgba(21,94,185,1) 100%);
 	margin-top: 25px;
 	margin-right: 25px;
-}
+}*/
 
 ul{
 	position: static;
@@ -700,6 +727,7 @@ footer i:hover{
 	swiper-slide {
 		color: transparent;
 	}
+	
 }
 
 
@@ -718,6 +746,11 @@ footer i:hover{
 		width: 100%;
 		background: linear-gradient(90deg, rgba(125,133,213,1) 0%, rgba(148,187,233,1) 100%);
 		font-weight: bold;
+	}
+
+	.img__overlay:hover{
+		width: 0;
+		color: transparent;
 	}
 }
 
