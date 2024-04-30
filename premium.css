@@ -1,64 +1,47 @@
 body {
-	background: url(./img/capa.png),
-				url(./img/ruido.png),
-				linear-gradient(50deg,#4b7ff0,#2926f8);
-	background-attachment: fixed;
-	font-family: 'Lato', Arial, Helvetica, sans-serif;
-	color: white;
-	overflow-x: hidden;
+    background: url(./img/capa.png),
+                url(./img/ruido.png),
+                linear-gradient(50deg,#4b7ff0,#2926f8);
+    background-attachment: fixed;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: white;
+    overflow-x: hidden;
 }
 
-#top-row{
-	background-color: black;
-}
-
-.premium-header{
+.premium-header {
     display: flex;
     justify-content: center;
-	background: rgba(0, 0, 0, 0.664);
+    background: rgba(0, 0, 0, 0.664);
 }
 
-
-.pag-divider{ 
-	width: 100%;
-	height: .25em;  
-	background: linear-gradient(270deg, #040353, #371b98, #2d21a0, #244b95, #2862bc, #615fdd);
+.pag-divider {
+    width: 100%;
+    height: .25em;
+    background: linear-gradient(270deg, #040353, #371b98, #2d21a0, #244b95, #2862bc, #615fdd);
     background-size: 1400% 1400%;
     animation: AnimationName 7s ease infinite;
 }
 
 @keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+    0% { background-position: 0% 51% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 51% }
 }
 
-
-#top-row{
-	background-color: black;
-	margin: 0;
-	padding: 0;
+.bx-header {
+    text-align: justify;
+    padding: 10px;
 }
 
-.bx-header{
-	text-align: justify;
-	padding: 10px;
+video {
+    margin: 0;
+    padding: 0;
+    background-color: black;
 }
 
-video{
-	margin: 0;
-	padding: 0;
-	background-color: black;
-
-}
-
-#vx-destaque{
-	left: 0;
-}
-
-.sky{
+.sky {
     width: 550px;
-	height: 30vh;
+    height: 30vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -66,184 +49,90 @@ video{
     pointer-events: none;
 }
 
-.sky .estrelinhas{
+.sky .estrelinhas,
+.sky .estrelinhas1 {
     position: relative;
     width: 100%;
-	height: 30vh;
+    height: 30vh;
     top: 0;
     left: 0;
     pointer-events: none;
 }
 
-.sky .estrelinhas div {
-    position: absolute;
-    display: float;
-}
-.sky .estrelinhas div:nth-child(9) {
-    left: 10%;
-    animation: animate 5s linear infinite;
-}
-.sky .estrelinhas div:nth-child(8) {
-    left: 20%;
-    animation: animate 10s linear infinite;
-}
-.sky .estrelinhas div:nth-child(7) {
-    left: 70%;
-    animation: animate 5s linear infinite;
-}
-.sky .estrelinhas div:nth-child(6) {
-    left: 60%;
-    animation: animate 15s linear infinite;
-}
-.sky .estrelinhas div:nth-child(5) {
-    left: 45%;
-    animation: animate 10s linear infinite;
-}
-.sky .estrelinhas div:nth-child(4) {
-    left: 70%;
-    animation: animate 20s linear infinite;
-}
-.sky .estrelinhas div:nth-child(3) {
-    left: 15%;
-    animation: animate 14s linear infinite;
-}
-.sky .estrelinhas div:nth-child(2) {
-    left: 5%;
-    animation: animate 7s linear infinite;
-}
-
-.sky .estrelinhas div:nth-child(1) {
-    left: 10%;
-    animation: animate 10s linear infinite;
-}
-
-.sky .estrelinhas1{
-    position: relative;
-    width: 100%;
-	height: 30vh;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-}
-
+.sky .estrelinhas div,
 .sky .estrelinhas1 div {
     position: absolute;
     display: float;
 }
-.sky .estrelinhas1 div:nth-child(1) {
-    left: 1%;
-    animation: animate 5s linear infinite;
-}
-.sky .estrelinhas1 div:nth-child(2) {
-    left: 20%;
-    animation: animate 9s linear infinite;
-}
-.sky .estrelinhas1 div:nth-child(3) {
-    left: 70%;
-    animation: animate 5s linear infinite;
-}
-.sky .estrelinhas1 div:nth-child(4) {
-    left: 5%;
-    animation: animate 7s linear infinite;
-}
-.sky .estrelinhas1 div:nth-child(5) {
-    left: 65%;
-    animation: animate 4s linear infinite;
-}
-.sky .estrelinhas1 div:nth-child(6) {
-    left: 30%;
-    animation: animate 5s linear infinite;
-}
-.sky .estrelinhas1 div:nth-child(7) {
-    left: 15%;
-    animation: animate 14s linear infinite;
-}
-.sky .estrelinhas1 div:nth-child(8) {
-    left: 20%;
-    animation: animate 15s linear infinite;
-}
 
-.sky .estrelinhas1 div:nth-child(9) {
-    left: 15%;
-    animation: animate 20s linear infinite;
-}
+.sky .estrelinhas div:nth-child(9) { left: 10%; animation: animate 5s linear infinite; }
+.sky .estrelinhas div:nth-child(8) { left: 20%; animation: animate 10s linear infinite; }
+.sky .estrelinhas div:nth-child(7) { left: 70%; animation: animate 5s linear infinite; }
+.sky .estrelinhas div:nth-child(6) { left: 60%; animation: animate 15s linear infinite; }
+.sky .estrelinhas div:nth-child(5) { left: 45%; animation: animate 10s linear infinite; }
+.sky .estrelinhas div:nth-child(4) { left: 70%; animation: animate 20s linear infinite; }
+.sky .estrelinhas div:nth-child(3) { left: 15%; animation: animate 14s linear infinite; }
+.sky .estrelinhas div:nth-child(2) { left: 5%; animation: animate 7s linear infinite; }
+.sky .estrelinhas div:nth-child(1) { left: 10%; animation: animate 10s linear infinite; }
+
+.sky .estrelinhas1 div:nth-child(1) { left: 1%; animation: animate 5s linear infinite; }
+.sky .estrelinhas1 div:nth-child(2) { left: 20%; animation: animate 9s linear infinite; }
+.sky .estrelinhas1 div:nth-child(3) { left: 70%; animation: animate 5s linear infinite; }
+.sky .estrelinhas1 div:nth-child(4) { left: 5%; animation: animate 7s linear infinite; }
+.sky .estrelinhas1 div:nth-child(5) { left: 65%; animation: animate 4s linear infinite; }
+.sky .estrelinhas1 div:nth-child(6) { left: 30%; animation: animate 5s linear infinite; }
+.sky .estrelinhas1 div:nth-child(7) { left: 15%; animation: animate 14s linear infinite; }
+.sky .estrelinhas1 div:nth-child(8) { left: 20%; animation: animate 15s linear infinite; }
+.sky .estrelinhas1 div:nth-child(9) { left: 15%; animation: animate 20s linear infinite; }
+
 @keyframes animate {
-    0% 
-    {
-        opacity: 0;
-        top: -10%;
-        transform: translateX(0px) rotate(0deg);
-    }
-    10% 
-    {
-        opacity: 1;
-    }
-    20%
-    {
-        transform: translateX(0px) rotate(0deg);
-    }
-    40%
-    {
-        transform: translateX(0px) rotate(0deg);
-    }
-    60%
-    {
-        transform: translateX(0px) rotate(0deg);
-    }
-    80%
-    {
-		
-        transform: translateX(0px) rotate(0deg);
-    }
-    100%
-    {
-		opacity: -1;
-        top: 250%;
-        transform: translateX(0px) rotate(0deg);
-    }
+    0% { opacity: 0; top: -10%; transform: translateX(0px) rotate(0deg); }
+    10% { opacity: 1; }
+    20% { transform: translateX(0px) rotate(0deg); }
+    40% { transform: translateX(0px) rotate(0deg); }
+    60% { transform: translateX(0px) rotate(0deg); }
+    80% { transform: translateX(0px) rotate(0deg); }
+    100% { opacity: -1; top: 250%; transform: translateX(0px) rotate(0deg); }
 }
 
-
-.liveShare-hdr{
+.liveShare-hdr {
     padding: 25px;
 }
 
-.liveShare-component{
-	width: 100%;
-	background-color: #000000;
-}
-	
-.liveShare-rooms{
-	display: flex;
-    flex-direction: row;
-	justify-content: center;
-	
+.liveShare-component {
+    width: 100%;
+    background-color: #000000;
 }
 
-.cd-free{
+.liveShare-rooms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cd-free {
     display: flex;
     font-size: 12px;
-
 }
 
-.descrito{
+.descrito {
     margin-bottom: 15px;
     font-weight: bold;
 }
 
-.card{
+.card {
     margin: 25px;
-	width: 750px;
+    width: 100%;
+    max-width: 750px;
     height: 400px;
-	background: linear-gradient(270deg, #27272e56, #361b9863, #2e21a052, #244c9560, #2863bc63, #615fdd52);
+    background: linear-gradient(270deg, #27272e56, #361b9863, #2e21a052, #244c9560, #2863bc63, #615fdd52);
     background-size: 1400% 1400%;
     animation: AnimationName 7s ease infinite;
 }
 
-.btn-scp{
-	background: rgb(125,133,213);
-	background: linear-gradient(90deg, rgba(125,133,213,1) 0%, rgba(148,187,233,1) 100%);
-	color: black;
-	font-weight: bold;
-	
+.btn-scp {
+    background: rgb(125, 133, 213);
+    background: linear-gradient(90deg, rgba(125, 133, 213, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    color: black;
+    font-weight: bold;
 }
