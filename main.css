@@ -754,10 +754,12 @@ footer i:hover {
 	nav.navbar-transparente {
 		margin: 0;
 		padding: 0;
+		
 	}
 
 	.navbar-brand{
 		margin-top: -25px;
+	
 	}
 
 	.navbar-toggler{
@@ -778,6 +780,42 @@ footer i:hover {
 		margin-top: 55px;
 	}
 
+	.bx-spotlight img{
+		width: 450px;
+	}
+
+	.spotlight-txt{
+		margin-left: 5px;
+		margin-bottom: 15px;
+	}
+
+	.desc_img__overlay{
+		padding: 10px;
+	}
+
+	.desc_img__title{
+		font-size: 45px;
+		width: 450px;
+		margin-left: 130px;
+		padding: 10px;
+	}
+
+	.desc_img__txt{
+		width: 450px;
+		margin-left: 130px;
+		text-align: justify;
+		padding: 10px;
+	}
+
+	.menu__desc_swi{
+		width: 450px;
+		margin-left: 130px;
+	}
+
+	#bk-trailer{
+		width: 450px;
+		margin: 15px;
+	}
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {

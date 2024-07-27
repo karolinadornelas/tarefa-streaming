@@ -1,17 +1,8 @@
-/*registro*/
-
-*
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
     background: rgb(0, 0, 0);
 	font-family: 'Lato', Arial, Helvetica, sans-serif;
     color: white;
+    overflow: hidden;
 }
 
 .login-header{
@@ -24,49 +15,49 @@ body{
 	background: linear-gradient(90deg, rgb(10, 58, 121) 16%, rgba(6,5,85,1) 29%, rgba(8,7,106,1) 40%, rgba(9,9,121,1) 47%, rgba(34,7,148,1) 55%, rgba(51,6,166,1) 67%, rgba(39,40,173,1) 79%, rgba(36,50,175,1) 83%, rgba(33,58,177,1) 86%, rgba(21,94,185,1) 100%);
 	width: 100%;
 	height: .25rem;
-
 }
 
+p{
+    margin: 5px;
+    font-size: 12px;
+}
 
 .content-wrapper{
-    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; 
     height: 100vh;
     background-color: black;
     flex: 1;
     padding: 1.25rem 1.25rem 2.5rem;
-    overflow: hidden;
-    flex-direction: column;
-    
 }
 
 .bx-all{
-    padding: 25px;
+    padding: 55px;
+    padding: 55px;
 }
 
 .all{
-    
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
     background-color: rgb(9, 12, 32);
-    
-}
-
-button{
-    margin: 25px;
 }
 
 .bx-nov{
     display: flex;
+    margin: -55px 0px 10px 15px;
+    padding: 15px;
 }
 
-
 .wrapper{
-    width: 500px;
-    height:75px;
+    width: 450px;
+    height: 55px;
     position:relative;
     text-transform: uppercase;
+    margin-bottom:20px;
 }
 
 .wrapper input{
@@ -76,15 +67,15 @@ button{
     border: none;
     border-bottom: 3px solid rgb(35, 42, 134);
     color: white;
-    padding-left: 8px;
     outline: none;
-
 }
 
+button{
+    margin: 40px;
+}
 
 label{
     position: absolute;
-    top: 50%;
     left: 30px;
     transform: translate(-70%);
     transition: all .8s ease;
@@ -94,11 +85,25 @@ label{
     background-color:rgb(9, 12, 32);
 }
 
+@media (max-width: 575.98px) {
+	.content-wrapper{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center !important;
+    }
 
-
-input:focus + label{
-    font-size: 10px;
-    top: 0;
-    padding: 0px;
-    
+    .all{
+        width: 420px;
+        margin-left: 55px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .wrapper{
+        width: 400px;
+    }
 }
